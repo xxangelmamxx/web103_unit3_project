@@ -1,10 +1,35 @@
 import React, { useState, useEffect } from 'react'
 import Event from '../components/Event'
+import LocationsAPI from '../services/LocationsAPI'
 import '../css/LocationEvents.css'
 
 const LocationEvents = ({index}) => {
     const [location, setLocation] = useState([])
     const [events, setEvents] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const locationData = await LocationsAPI.getLocationById(parseInt(index))
+                setLocation(locationData)
+            }
+            catch (error) {
+                console.error(error)
+            }
+        }) ()
+    }, [index])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const eventsData = await LocationsAPI.getEventsByLocation(parseInt(index))
+                setEvents(eventsData)
+            }
+            catch (error) {
+                console.error(error)
+            }
+        }) ()
+    }, [index])
 
     return (
         <div className='location-events'>
@@ -29,6 +54,7 @@ const LocationEvents = ({index}) => {
                             date={event.date}
                             time={event.time}
                             image={event.image}
+                            remaining={event.remaining}
                         />
                     ) : <h2><i className="fa-regular fa-calendar-xmark fa-shake"></i> {'No events scheduled at this location yet!'}</h2>
                 }

@@ -1,0 +1,25 @@
+.all-events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.all-events-filter {
+    width: 100vw;
+}
+
+.event-filters {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90vw;
+    display: flex;
+}
+
+.event-filters button {
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 30px;
+}
