@@ -14,8 +14,8 @@ The following **required** functionality is completed:
 
 - [x] **The web app uses React to display data from the API**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+  - [X]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 - [x] **The web app displays a title.**
 - [x] **Website includes a visual interface that allows users to select a location they would like to view.**
   - [x] *Note: A non-visual list of links to different locations is insufficient.* 
@@ -37,10 +37,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img width="720" height="468" alt="screen-recording-3" src="https://github.com/user-attachments/assets/8e83c47f-519d-4031-8bc1-5570d9f71a9e" />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  GIF tool here
+GIF created with ...  ChatGPT
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
